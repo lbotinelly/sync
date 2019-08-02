@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Threading.Tasks;
 
 namespace Sync.Service
 {
     public interface ISyncService
     {
-        void DoSync();
+        Task<ISyncServiceResult> Start();
     }
 }
